@@ -54,6 +54,7 @@ header{
     justify-content: space-between;
     width: 85%;
     color: $white1;
+    animation: animNavbar 2s forwards ease;
     .nav-left{
       display: flex;
       justify-content: center;
@@ -92,8 +93,17 @@ header{
         }
       }
     }
+    @keyframes animNavbar {
+      0%{
+        opacity: 0;
+        transform: translateY(200px) translateX(-50%);
+      }
+      100%{
+        opacity: 1;
+        transform: translateY(0) translateX(-50%);
+      }
+    }
   }
-
   @keyframes animHeader {
     0%{
       opacity: 0;
