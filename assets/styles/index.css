@@ -61,10 +61,26 @@ header .header-container h1 {
   text-transform: uppercase;
   letter-spacing: 6px;
 }
+@media screen and (max-width: 1000px) {
+  header .header-container h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 570px) {
+  header .header-container h1 {
+    font-size: 2rem;
+  }
+}
 header .header-container p {
   margin: 40px 0 60px;
   font-style: italic;
   color: rgb(243, 243, 243);
+}
+@media screen and (max-width: 1000px) {
+  header .header-container p {
+    width: 85%;
+    margin: 40px auto 60px;
+  }
 }
 header .header-container span {
   display: -webkit-box;
@@ -124,6 +140,14 @@ header nav .nav-left {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 815px) {
+  header nav .nav-left {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 header nav .nav-left li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -148,6 +172,11 @@ header nav .nav-left li:hover {
   background: rgb(233, 233, 233);
   color: rgb(17, 17, 17);
 }
+@media screen and (max-width: 700px) {
+  header nav .nav-left li {
+    font-size: 0.6rem;
+  }
+}
 header nav .nav-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,6 +188,11 @@ header nav .nav-right {
       justify-content: space-around;
   width: 25%;
   font-size: 1.1rem;
+}
+@media screen and (max-width: 815px) {
+  header nav .nav-right {
+    display: none;
+  }
 }
 header nav .nav-right i {
   cursor: pointer;
@@ -244,6 +278,16 @@ header nav .nav-right i:hover {
   background: rgb(209, 209, 209);
   width: 37%;
 }
+@media screen and (max-width: 750px) {
+  #main .section1 span::before {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 530px) {
+  #main .section1 span::before {
+    width: 25%;
+  }
+}
 #main .section1 span::after {
   content: "";
   position: absolute;
@@ -255,10 +299,35 @@ header nav .nav-right i:hover {
   background: rgb(209, 209, 209);
   width: 37%;
 }
+@media screen and (max-width: 750px) {
+  #main .section1 span::after {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 530px) {
+  #main .section1 span::after {
+    width: 25%;
+  }
+}
 #main .section1 h2 {
   text-transform: uppercase;
   font-size: 3rem;
   letter-spacing: 2px;
+}
+@media screen and (max-width: 840px) {
+  #main .section1 h2 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  #main .section1 h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  #main .section1 h2 {
+    font-size: 1.8rem;
+  }
 }
 #main .section1 p {
   width: 60%;
@@ -276,6 +345,11 @@ header nav .nav-right i:hover {
 #main .section2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 790px) {
+  #main .section2 {
+    display: block;
+  }
 }
 #main .section2 .left-part {
   padding: 60px;
@@ -328,6 +402,12 @@ footer {
   background: rgb(232, 232, 232);
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 800px) {
+  footer {
+    display: block;
+    padding: 5px;
+  }
 }
 footer form {
   width: 85%;
@@ -388,6 +468,11 @@ footer .infos-contact > div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 800px) {
+  footer .infos-contact > div:first-child {
+    border-top: 1px solid rgb(209, 209, 209);
+  }
 }
 footer .infos-contact > div h3 {
   -ms-flex-item-align: center;

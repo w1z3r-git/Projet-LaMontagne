@@ -4,6 +4,10 @@ footer{
   background: rgb(232, 232, 232);
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 800px) {
+    display: block;
+    padding: 5px;
+  }
   form{
     width: 85%;
     margin: 50px auto;
@@ -54,6 +58,11 @@ footer{
       display: grid;
       grid-template-columns: 30% 70%;
       align-items: center;
+      &:first-child{
+        @media screen and (max-width: 800px) {
+          border-top: 1px solid rgb(209, 209, 209);;
+        }
+      }
       h3{
         align-self: center ;
         font-size: .7rem;
