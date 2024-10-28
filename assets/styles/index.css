@@ -325,7 +325,7 @@ header nav .nav-right i:hover {
 footer {
   width: 85%;
   margin: 0 auto 50px;
-  background: rgb(209, 209, 209);
+  background: rgb(232, 232, 232);
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -346,7 +346,7 @@ footer form label {
 }
 footer form input[type=text],
 footer form textarea {
-  border: 1px solid rgb(105, 105, 105);
+  border: 1px solid rgb(209, 209, 209);
   background: transparent;
   padding: 10px;
   outline: none;
@@ -364,8 +364,8 @@ footer form textarea {
   resize: none;
 }
 footer form input[type=submit] {
-  color: grey;
-  border-color: grey;
+  color: rgb(105, 105, 105);
+  border-color: rgb(209, 209, 209);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,8 +381,8 @@ footer .infos-contact {
   grid-template-rows: repeat(4, 1fr);
 }
 footer .infos-contact > div {
-  border-left: 1px solid grey;
-  border-bottom: 1px solid grey;
+  border-left: 1px solid rgb(209, 209, 209);
+  border-bottom: 1px solid rgb(209, 209, 209);
   display: grid;
   grid-template-columns: 30% 70%;
   -webkit-box-align: center;
@@ -420,10 +420,15 @@ footer .infos-contact .social ul li {
           align-items: center;
   width: 35px;
   height: 35px;
-  border: 1px solid grey;
+  border: 1px solid rgb(209, 209, 209);
   border-radius: 150px;
   margin: 5px;
   cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+footer .infos-contact .social ul li:hover {
+  border-color: rgb(17, 17, 17);
 }
 footer .infos-contact .social ul li i {
   font-size: 0.9rem;
